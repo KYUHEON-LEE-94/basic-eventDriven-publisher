@@ -1,5 +1,12 @@
-package com.study.eventdrivenbasic.vo;/**
- *packageName    : com.study.eventdrivenbasic.vo
+package com.study.eventdrivenbasic.vo;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serializable;
+
+/**
+ * packageName    : com.study.eventdrivenbasic.vo
  * fileName       : OrderEvent
  * author         : heon
  * date           : 2023-12-05
@@ -8,5 +15,11 @@ package com.study.eventdrivenbasic.vo;/**
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2023-12-05           heon               최초 생성
- */public class OrderEvent {
+ */
+@Getter
+@Setter
+public class OrderEvent{
+
+    private Long orderId;
+    private String name;
 }
